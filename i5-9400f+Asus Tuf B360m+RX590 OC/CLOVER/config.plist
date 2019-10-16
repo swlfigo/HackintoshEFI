@@ -94,7 +94,7 @@
 				<key>FixSBUS</key>
 				<false/>
 				<key>FixShutdown</key>
-				<false/>
+				<true/>
 				<key>FixTMR</key>
 				<false/>
 				<key>FixUSB</key>
@@ -108,16 +108,16 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change EHC1 to EH01</string>
+					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					RUhDMQ==
+					RUMwXw==
 					</data>
 					<key>Replace</key>
 					<data>
-					RUgwMQ==
+					RUNfXw==
 					</data>
 				</dict>
 				<dict>
@@ -136,7 +136,21 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change XHC1 to XHC</string>
+					<string>change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHCI to XHC_</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -173,13 +187,15 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -v</string>
+		<string>dart=0 -v nv_disable=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -210,8 +226,6 @@
 			<string>0x0</string>
 			<key>IMEI</key>
 			<string>0x0</string>
-			<key>IntelGFX</key>
-			<string>0x12345678</string>
 			<key>LAN</key>
 			<string>0x0</string>
 			<key>NVidia</key>
@@ -301,27 +315,47 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 1 PMHeart/DalianSky</string>
+				<string>USB port limit patch by PMHeart</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g/sPDw==
+				g32IDw+DpwQAAA==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.13.x</string>
 				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g/s/Dw==
+				g32ID5CQkJCQkA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 2 PMHeart/DalianSky</string>
+				<string>USB port limit patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g710////EA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g710////Gw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB port limit patch 10.14.x modify by DalianSky(credit PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -330,8 +364,6 @@
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
@@ -341,7 +373,27 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 3 PMHeart/DalianSky</string>
+				<string>USB port limit patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g72M/v//EA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g72M/v//Gw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.x 10.15.x #1 modify by DalianSky(credits PMheart)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -350,8 +402,100 @@
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent AGDP from loading</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ugUAAAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>MatchOS</key>
-				<string>10.14.x</string>
+				<string>10.11.x,10.12.x,10.13.x,10.14.x,10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleGraphicsDevicePolicy</string>
+				<key>Replace</key>
+				<data>
+				ugAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.15.x #1 modify by DalianSky</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/kPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/k/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/8PDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/8/Dw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>External icons patch</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RXh0ZXJuYWw=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.11.x,10.12.x,10.13.x,10.14.x,10.15.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleAHCIPort</string>
+				<key>Replace</key>
+				<data>
+				SW50ZXJuYWw=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port limit patch 10.14.x modify by DalianSky(credits PMheart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPDw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
@@ -361,22 +505,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 4 PMHeart/DalianSky</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g/8PDw==
+				AEFQUExFIFNTRAA=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
 				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				g/8/Dw==
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
@@ -401,7 +543,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02713101GUJG36JA</string>
+		<string>C02653902GUJG361H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -431,9 +573,9 @@
 		<key>ProductName</key>
 		<string>iMacPro1,1</string>
 		<key>SerialNumber</key>
-		<string>C02THNZ9HX87</string>
+		<string>C02T10N1HX87</string>
 		<key>SmUUID</key>
-		<string>2E74AB78-23B7-4D81-8E12-62F12339E947</string>
+		<string>1BBDD645-3B98-480B-8049-75065FAAAF46</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
