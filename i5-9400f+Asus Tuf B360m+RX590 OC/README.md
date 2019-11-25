@@ -12,6 +12,14 @@
 | 次硬盘 | Micron英睿达(Crucial) 500G SSD固态硬盘 SATA3.0接口 MX500系列 |
 | 电源   | 航嘉 600w 直出                                               |
 
+
+
+# Clover Version
+
+[v2.5k_r5099](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+
+
+
 ## 哪些能在Clover正常工作
 
  - [x] 正常上网 (使用网线)
@@ -26,11 +34,19 @@
 
  - [x] HDMI口有输出 (没测试DP口)
 
- - [ ] 双屏输出(2019.10.16 没测试,以后测试)
+ - [x] 双屏输出
 
  - [x] USB口都能用
 
 ![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2019-10-16-080418.png)
+
+## 10.15.1
+
+![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2019-11-25-082642.png)
+
+
+
+
 
 ## 10.15.0
 
