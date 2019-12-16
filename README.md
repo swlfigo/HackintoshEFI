@@ -13,7 +13,7 @@
 
 ## i5 9400f + Asus TUF B360M + RX590 OC :
 
- [传送门](./i5-9400f+Asus Tuf B360m+RX590 OC/README.md)
+  [传送门]( ./i5-9400f+Asus Tuf B360m+RX590 OC/README.md)
 
 ## 电脑配置
 
@@ -36,7 +36,7 @@
 
 ## i7 7700 + Asus Z270-AR + RX580 OC
 
- [传送门](./i7-7700+Asus Z270AR+RX580 OC/ReadMe.md)
+  [传送门]( ./i7-7700+Asus Z270AR+RX580 OC/ReadMe.md)
 
 | 规格   | 详细信息                                                     |
 | ------ | ------------------------------------------------------------ |
@@ -46,4 +46,6 @@
 | 内存   | 金士顿(Kingston) DDR4 2666  台式机内存 骇客神条 Fury雷电系列 (8+8+16 = 32GB) |
 | 主硬盘 | 英特尔（Intel） 760P SSD NVMe 250G                           |
 
-## 
+## Clover Version
+
+[v2.5k_r5100](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5100)
