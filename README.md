@@ -4,10 +4,10 @@
 
 每个机型的驱动可在各个文件夹中下载
 
-| 型号                                 | 系统版本 |
-| ------------------------------------ | -------- |
-| i5 9400f + Asus TUF B360M + RX590 OC | 10.15.1  |
-| i7 7700 + Asus Z270-AR + RX580 OC    | 10.15.0  |
+| 型号                                 | 系统版本                                 |
+| ------------------------------------ | ---------------------------------------- |
+| i5 9400f + Asus TUF B360M + RX590 OC | 10.15.7(可直接安装MacOS Big Sur Beta 11) |
+| i7 7700 + Asus Z270-AR + RX580 OC    | 10.15.0                                  |
 
 
 
@@ -28,11 +28,13 @@
 
 
 
-### Clover Version
+### ~~Clover Version~~
 
-[v2.5k_r5099](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+[~~v2.5k_r5099~~](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
 
+### OC Version(可直接安装 MacOS Big Sur Beta 11)
 
+### 0.6.2
 
 ## i7 7700 + Asus Z270-AR + RX580 OC
 

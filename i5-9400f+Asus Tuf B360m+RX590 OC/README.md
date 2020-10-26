@@ -5,7 +5,7 @@
 | 规格   | 详细信息                                                     |
 | ------ | ------------------------------------------------------------ |
 | CPU    | 英特尔i5 9400F                                               |
-| 主板   | ASUS TUF B360M-PLUS GAMING S  (带S是某东特供版)              |
+| 主板   | ASUS TUF B360M-PLUS GAMING S                                 |
 | 显卡   | 蓝宝石（Sapphire） RX590 8G D5 海外版 OC                     |
 | 内存   | 金士顿(Kingston) DDR4 2666 16GB 台式机内存 骇客神条 Fury雷电系列 |
 | 主硬盘 | 英特尔（Intel） 760P SSD NVMe 250G                           |
@@ -14,9 +14,25 @@
 
 
 
-# Clover Version
+# ~~Clover Version~~
 
-[v2.5k_r5099](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+[~~v2.5k_r5099~~](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+
+
+
+# OC Version(可直接安装 MacOS Big Sur Beta 11)
+
+## 0.6.2
+
+
+
+**请自行替换三码！！！！！**
+
+**请自行替换三码！！！！！**
+
+**请自行替换三码！！！！！**
+
+
 
 
 
@@ -32,13 +48,17 @@
 
  - [x] 能屏幕保护
 
- - [x] HDMI口有输出 (没测试DP口)
+ - [x] HDMI口有输出
 
  - [x] 双屏输出
 
  - [x] USB口都能用
 
-![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2019-10-16-080418.png)
+## 10.15.7
+
+![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2020-10-26-013254.png)
+
+
 
 ## 10.15.1
 
