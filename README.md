@@ -7,7 +7,7 @@
 | 型号                                 | 系统版本                                 |
 | ------------------------------------ | ---------------------------------------- |
 | i5 9400f + Asus TUF B360M + RX590 OC | 10.15.7(可直接安装MacOS Big Sur Beta 11) |
-| i7 7700 + Asus Z270-AR + RX580 OC    | 10.15.0                                  |
+| i7 7700 + Asus Z270-AR + RX580 OC    | 11.2.3                                   |
 
 
 
@@ -48,6 +48,10 @@
 | 内存   | 金士顿(Kingston) DDR4 2666  台式机内存 骇客神条 Fury雷电系列 (8+8+16 = 32GB) |
 | 主硬盘 | 英特尔（Intel） 760P SSD NVMe 250G                           |
 
-## Clover Version
+## OpenCore 0.6.8
 
-[v2.5k_r5100](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5100)
+
+
+## ~~Clover Version~~
+
+~~[v2.5k_r5100](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5100)~~
