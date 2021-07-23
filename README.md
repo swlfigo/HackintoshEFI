@@ -26,15 +26,15 @@
 | 主硬盘 | 英特尔（Intel） 760P SSD NVMe 250G                           |
 | 次硬盘 | Micron英睿达(Crucial) 500G SSD固态硬盘 SATA3.0接口 MX500系列 |
 
+# (可直接安装 MacOS Monterey(12) Beta3 )
 
+**此配置机型不再更新！**
 
-### ~~Clover Version~~
+**此配置机型不再更新！**
 
-[~~v2.5k_r5099~~](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+**此配置机型不再更新！**
 
-### OC Version(可直接安装 MacOS Big Sur Beta 11)
-
-### 0.6.2
+**此配置机型不再更新！**
 
 ## i7 7700 + Asus Z270-AR + RX580 OC
 
@@ -49,9 +49,3 @@
 | 主硬盘 | 英特尔（Intel） 760P SSD NVMe 250G                           |
 
 ## OpenCore 0.6.8
-
-
-
-## ~~Clover Version~~
-
-~~[v2.5k_r5100](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5100)~~
