@@ -14,15 +14,19 @@
 
 
 
-# ~~Clover Version~~
+# (可直接安装 MacOS Monterey(12) Beta3 )
 
-[~~v2.5k_r5099~~](https://github.com/Dids/clover-builder/releases/tag/v2.5k_r5099)
+**此配置机型不再更新！**
+
+**此配置机型不再更新！**
+
+**此配置机型不再更新！**
+
+**此配置机型不再更新！**
 
 
 
-# OC Version(可直接安装 MacOS Big Sur Beta 11)
-
-## 0.6.2
+## 0.7.1
 
 
 
@@ -53,6 +57,14 @@
  - [x] 双屏输出
 
  - [x] USB口都能用
+
+
+
+## 11.3
+
+![](http://sylarimage.oss-cn-shenzhen.aliyuncs.com/2021-07-23-054510.png)
+
+
 
 ## 10.15.7
 
